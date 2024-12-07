@@ -1,0 +1,16 @@
+name: First Workflow
+
+# Neeeded to allow manual running
+on: workflow_dispatch
+
+jobs:
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output
+        run: echo "Hello world!"
+      - name: Print goodbye
+        run: echo "Done, goodbye!"
+    
+
+    
